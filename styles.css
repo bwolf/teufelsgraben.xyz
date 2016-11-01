@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Slabo 27px', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+form {
+  margin: 1em 0;
+}
+
+#info-container {
+  position: absolute;
+  top: 1ex;
+  left: 1ex;
+  z-index: 10;
+  color: black;
+}
+
+#info-container h1, h2, h3, h4, h5, h6 {
+  color: forestgreen;
+}
+
+#info-container a {
+  color: black;
+  transition: color 0.2s ease;
+}
+
+#info-container a:hover {
+  color: forestgreen;
+}
+
+/*noinspection CssUnusedSymbol*/
+#info-icon.active {
+  color: forestgreen;
+}
+
+#info-overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .35s, opacity .35s linear;
+  padding: 2em;
+  max-width: 80%;
+  margin-left: 3em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*noinspection CssUnusedSymbol*/
+#info-overlay.active {
+  visibility: visible;
+  opacity: .85;
+  transition: opacity .35s linear;
+}
+
+#info-overlay h1 {
+  margin: .5ex 0 .5ex 0;
+}
+
+#info-overlay p {
+  line-height: 1.5em;
+}
+
+#info-overlay a {
+  color: forestgreen;
+}
+
+#info-overlay ul {
+  margin: 0;
+  padding: 0;
+}
+
+#info-overlay li {
+  list-style-type: none;
+  margin: .5ex 0;
+  padding: 0;
+}
+
+#info-overlay li:before {
+  content: "\0BB \020";
+  color: gray;
+  padding-right: .5ex;
+}
+
+#info-overlay p img {
+  margin: 0;
+  padding: 0 .5ex 0 0;
+  vertical-align: middle;
+}
